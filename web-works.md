@@ -9,9 +9,6 @@ High-level overview of the internet, or at least the parts related to software d
 ## What happens when
 
 
-------
-
-
 * I type https://developer.chrome.com/home/devtools-pillar into the URL bar of a browser?
 
 
@@ -37,7 +34,9 @@ High-level overview of the internet, or at least the parts related to software d
         3. Once the browser has a current IP address, it sends a GET request to the IP address for **developer.chrome.com**.
 
 
-    3. Ports are sometimes included in an address. Servers can have multiple hostnames and serve different processes through different ports. For example, an e-commerce site may serve their book store through one port, and their video services through another. 
+    3. Ports are sometimes included in an address. 
+    
+        Servers can have multiple hostnames and serve different processes through different ports. For example, an e-commerce site may serve their book store through one port, and their video services through another. 
 
         When a port is not explicitly given, the default per the protocol is used. For HTTPS, is default port is 443. In our example, the client will connect to **developer.chrome.com** at **port 443**.
 
@@ -50,7 +49,9 @@ High-level overview of the internet, or at least the parts related to software d
 
         Sometimes the server responds with a redirect status code and location. At this point the browser automatically sends a GET request to that new location.
 
-    5. If a query string is included in the URL, the client would pass that as additional information in the GET request. These parameters can be used by the server to change what is displayed or accessed, depending oon how the server is designed. 
+    5. If a query string is included in the URL, the client would pass that as additional information in the GET request. 
+    
+        These parameters can be used by the server to change what is displayed or accessed, depending oon how the server is designed. 
 
 
 ------
